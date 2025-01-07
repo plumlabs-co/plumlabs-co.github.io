@@ -1,0 +1,178 @@
+:root {
+    --dark-purple: #514898;
+    --logo-purple: #9378E3;
+    --font: "Unbounded", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+p,
+button {
+    font-family: var(--font);
+}
+
+.responsive-navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px clamp(15px, 4vw, 30px);
+    margin-bottom: 50px;
+}
+
+.responsive-navbar a {
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1em;
+    color: #000;
+    font-family: var(--font);
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+.links a:hover {
+    color: var(--dark-purple);
+}
+
+.plum {
+    font-weight: 900;
+}
+
+.labs {
+    font-weight: 200;
+}
+
+.highlight {
+    color: var(--logo-purple);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.content {
+    max-width: 700px;
+    padding: 30px clamp(15px, 5vw, 0px);
+    text-align: center;
+}
+
+.content > img {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.landing {
+    height: 70vh;
+}
+
+button {
+    font-size: 1em;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--dark-purple);
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .35s;
+}
+
+button:hover {
+    background-color: #332c6a;
+}
+
+
+.footer {
+    background-color: var(--dark-purple);
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+    font-family: var(--font);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.footer-logo h1 {
+    font-size: 2em;
+    margin: 0;
+    text-align: left;
+}
+
+.links-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.links-column a {
+    text-decoration: none;
+    color: white;
+    font-size: .9em;
+    transition: opacity .35s;
+}
+
+.links-column a:hover {
+    opacity: .6;
+}
+
+.footer-bottom {
+    font-size: .9em;
+    font-weight: 200;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-logo h1 {
+        text-align: center;
+    }
+
+    .links-column {
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .links a#contact {
+        display: none;
+    }
+}
+
+/* Temporary CSS */
+
+.space-around {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.space-around > h1 {
+    text-align: center;
+}
