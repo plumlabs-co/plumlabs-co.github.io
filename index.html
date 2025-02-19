@@ -7,61 +7,127 @@
     <link rel="icon" type="image/x-icon" href="media/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Mynerve&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>plumlabs</title>
 </head>
 
 <body>
-    <div class="responsive-navbar" id="navbar">
-        <a href="/" id="logo"><span class="plum">Plum</span><span class="labs">LABS</span></a>
-        <div class="links">
-            <a href="#portfolio">portfolio</a>
-            <a id="contact" href="mailto:contact@plumlabs.co">contact</a>
-        </div>
+    <div class="cursor-container">
+        <div class="cursor"></div>
     </div>
 
-    <div class="main">
-        <div class="content landing" data-aos="fade-up">
-            <img src="media/plumlabs.png" alt="logo-image">
-            <br><br><br><br>
-            <p>
-                building <span class="highlight">technology</span> people love. <br>we're a group of developers and
-                designers creating meaningful technology to solve problems.
-            </p>
-            <br><br><br><br>
-            <button onclick="window.location.href='mailto:contact@plumlabs.co';">contact us</button>
-        </div>
-        <div class="content space-around" id="portfolio" data-aos="fade-up">
-            <h1>new <span class="plum highlight">projects</span> coming soon.</h1>
-        </div>
+    <div class="preloader">
+        <h1><span class="plum">Plum</span><span class="labs">LABS</span></h1>
     </div>
-    <br><br><br><br><br>
-    <div class="footer">
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-logo">
-                    <h1><span class="plum">Plum</span><span class="labs">LABS</span></h1>
-                </div>
-                <div class="links-column">
-                    <a href="#">team</a>
-                    <a href="mailto:contact@plumlabs.co">contact us</a>
-                    <a href="https://github.com/plumlabs-co">github</a>
-                </div>
-                <div class="links-column">
-                    <a href="https://www.termsfeed.com/live/7a4e5195-a05f-4d20-9868-6d2249b0e98c">privacy policy</a>
-                    <a href="https://www.termsfeed.com/live/2cd90ea4-88a7-4ba4-aea2-783a64d69e14">terms and conditions</a>
-                    <a href="https://www.linkedin.com/company/plumlabs-co/">linkedin</a>
+
+    <div class="page hidden">
+        <div class="responsive-navbar" id="navbar">
+            <a href="/" id="logo"><span class="plum">Plum</span><span class="labs">LABS</span></a>
+            <div class="links">
+                <a href="#portfolio">portfolio</a>
+                <a id="contact" href="mailto:contact@plumlabs.co">contact</a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="landing">
+                <h1><span class="cursive">we are a <span class="highlight" id="e1">product labs</span>, building
+                        consumer </span> <span class="uncial" id="e2">apps </span> <span class="cursive">and
+                        technology</span> <span class="uncial" id="e3">products </span> <span class="cursive">to solve
+                        <span class="highlight">your</span> problems.</span></h1>
+                <br><br><br>
+                <div class="circle-container" data-aos="fade-up" data-aos-delay="1000">
+                    <svg id="rotatingText" viewBox="0 0 250 250" width="250" height="250">
+                        <defs>
+                            <path id="circle" d="
+                            M 125, 125
+                            m -100, 0
+                            a 100,100 0 1,0 200,0
+                            a 100,100 0 1,0 -200,0">
+                            </path>
+                        </defs>
+                        <text width="400">
+                            <textPath alignment-baseline="top" xlink:href="#circle" class="text">
+                                Send a message. - reach out. - contact us. -
+                            </textPath>
+                        </text>
+                    </svg>
+
+                    <button class="cta" onclick="window.location.href='mailto:contact@plumlabs.co';">
+                        <i class="fa fa-long-arrow-right"></i>
+                    </button>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>Copyright ©<span id="year"></span> PlumLabs · All Rights Reserved</p>
+
+            <h1 class="heading" id="e4"><span class="name-letter" id="portfolio">p</span>ortfo<span
+                    class="name-letter">l</span>io</h1>
+
+            <div class="portfolio-container">
+
+                <div class="portfolio-card" data-aos="fade-up" data-aos-delay="300">
+                    <h1>avsar</h1>
+                    <br>
+                    <p>a platform to find personalised opportunities for high school students.</p>
+                    <br>
+                    <p>we realized during our junior year of high school that we had missed out on many opportunities.
+                        to prevent others from having the same experience, we want to ensure they know what
+                        opportunities are out there.
+                        <br><br>
+                        to solve this problem, we started "avsar". avsar is a platform that helps students find
+                        opportunities relevant to them and make the most of their high school years.
+                        by helping students discover competitions, fellowships, internships, scholarships and more.
+                        <br><br>
+                        it gives personalised recommendations based on their interests, making it easy to find the right
+                        opportunities. with a simple design, exploring new options feels natural!
+                    </p>
+
+                    <br><br><br>
+                    <p class="status">launching soon...</p>
+                </div>
             </div>
-        </footer>
+
+        </div>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" height="0" width="0">
+            <defs>
+                <filter id="warp">
+                    <feTurbulence type="fractalNoise" baseFrequency=".06" numOctaves="4" />
+                    <feDisplacementMap in="SourceGraphic" scale="6" />
+                </filter>
+            </defs>
+        </svg>
+        <div class="footer">
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-logo">
+                        <h1><span class="plum">Plum</span><span class="labs">LABS</span></h1>
+                    </div>
+                    <div class="links-column">
+                        <a href="#portfolio">portfolio</a>
+                        <a href="mailto:contact@plumlabs.co">contact us</a>
+                        <a href="https://github.com/plumlabs-co">github</a>
+                    </div>
+                    <div class="links-column">
+                        <a href="/pages/privacy-policy.html">privacy policy</a>
+                        <a href="/pages/terms-and-conditions.html">terms and conditions</a>
+                        <a href="https://www.linkedin.com/company/plumlabs-co/">linkedin</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>Copyright ©<span id="year"></span> plumlabs · All Rights Reserved</p>
+                </div>
+            </footer>
+
+        </div>
     </div>
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/cursor.js"></script>
 </body>
 
 </html>
